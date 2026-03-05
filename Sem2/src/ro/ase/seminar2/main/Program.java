@@ -11,18 +11,20 @@ import java.util.List;
 
 public class Program {
 
-	public static void main(String[] args) {
-		List<Aplicant> listaAngajati;
-		try {
-			AplicantiReader reader = new AngajatiReader();
-
-			listaAngajati = reader.readAplicanti("angajati.txt");
-			for(Aplicant aplicant:listaAngajati)
-				System.out.println(aplicant.toString());
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+        List<Aplicant> listaAngajati;
+        try {
+            AplicantiReader reader = new AngajatiReader("angajati.txt");
+            listaAngajati = reader.readAplicanti();
+            for (Aplicant aplicant : listaAngajati) {
+                System.out.println(aplicant.toString());
+                aplicant.afisareVenit();
+                aplicant.afisareStatut();
+            }
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 
 }
