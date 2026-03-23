@@ -1,25 +1,24 @@
 package Restaurant.FactoryMethod.main;
 
+import Restaurant.FactoryMethod.clase.FelMancare;
 import Restaurant.FactoryMethod.clase.Supa;
-import Restaurant.FactoryMethod.clase.SupaLegume;
-import Restaurant.FactoryMethod.factory.FactorySupa;
-import Restaurant.FactoryMethod.factory.FactorySupaCiuperci;
-import Restaurant.FactoryMethod.factory.FactorySupaLegume;
-import Restaurant.FactoryMethod.factory.FactorySupaVita;
+import Restaurant.FactoryMethod.clase.SupaCrema;
+import Restaurant.FactoryMethod.fabrici.*;
 
 public class Main {
-    public static void main(String[] args) {
-        FactorySupa factoryLegume = new FactorySupaLegume();
-        Supa supaLegume = factoryLegume.creareSupa();
-        supaLegume.descriere();
+    static void main(String[] args) {
+        FelMancareFactory fabricaSupa = new SupaFactory();
+        FelMancare supaCrema = fabricaSupa.getFelMancare(TipSupa.SUPA_CREMA, 150, 15.5f);
+        FelMancare ciorba = fabricaSupa.getFelMancare(TipSupa.CIORBA, 200, 20.5f);
 
-        FactorySupa factoryVita = new FactorySupaVita();
-        Supa supaVita = factoryVita.creareSupa();
-        supaVita.descriere();
+        FelMancareFactory fabricaDesert = new DesertFactory();
+        FelMancare papanasi = fabricaDesert.getFelMancare(TipDesert.PAPANASI, 500, 25.5f, 1500);
+        FelMancare clatite = fabricaDesert.getFelMancare(TipDesert.CLATITE, 500, 27.5f, 1600);
 
-        FactorySupa factoryCiuperci = new FactorySupaCiuperci();
-        Supa supaCiuperci = factoryCiuperci.creareSupa();
-        supaCiuperci.descriere();
+        supaCrema.afiseaza();
+        ciorba.afiseaza();
+        papanasi.afiseaza();
+        clatite.afiseaza();
 
     }
 }
