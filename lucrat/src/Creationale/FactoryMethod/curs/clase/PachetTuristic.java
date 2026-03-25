@@ -1,4 +1,4 @@
-package Creationale.FactoryMethod.clase;
+package Creationale.FactoryMethod.curs.clase;
 
 public interface PachetTuristic {
     void afisareDescriere();

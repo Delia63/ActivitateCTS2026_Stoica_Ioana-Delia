@@ -1,6 +1,4 @@
-package Creationale.FactoryMethod.clase;
-
-import com.sun.security.jgss.GSSUtil;
+package Creationale.FactoryMethod.curs.clase;
 
 public class TransportAutocar implements PachetTuristic{
     @Override

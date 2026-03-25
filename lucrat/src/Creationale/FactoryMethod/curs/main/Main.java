@@ -1,7 +1,7 @@
-package Creationale.FactoryMethod.main;
+package Creationale.FactoryMethod.curs.main;
 
-import Creationale.FactoryMethod.clase.PachetTuristic;
-import Creationale.FactoryMethod.fabrici.*;
+import Creationale.FactoryMethod.curs.clase.PachetTuristic;
+import Creationale.FactoryMethod.curs.fabrici.*;
 
 public class Main {
     public static void main(String[] args) {

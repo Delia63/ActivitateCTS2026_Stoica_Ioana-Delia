@@ -1,4 +1,4 @@
-package Creationale.FactoryMethod.clase;
+package Creationale.FactoryMethod.curs.clase;
 
 public class CazareCabana implements PachetTuristic{
     @Override

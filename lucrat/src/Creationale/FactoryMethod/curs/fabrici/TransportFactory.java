@@ -1,8 +1,8 @@
-package Creationale.FactoryMethod.fabrici;
+package Creationale.FactoryMethod.curs.fabrici;
 
-import Creationale.FactoryMethod.clase.PachetTuristic;
-import Creationale.FactoryMethod.clase.TransportAutocar;
-import Creationale.FactoryMethod.clase.TransportMicrobuz;
+import Creationale.FactoryMethod.curs.clase.PachetTuristic;
+import Creationale.FactoryMethod.curs.clase.TransportAutocar;
+import Creationale.FactoryMethod.curs.clase.TransportMicrobuz;
 
 public class TransportFactory implements PachetTuristicFactory{
     @Override

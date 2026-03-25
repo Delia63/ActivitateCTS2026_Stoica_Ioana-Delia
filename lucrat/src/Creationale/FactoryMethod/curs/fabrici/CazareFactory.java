@@ -1,8 +1,8 @@
-package Creationale.FactoryMethod.fabrici;
+package Creationale.FactoryMethod.curs.fabrici;
 
-import Creationale.FactoryMethod.clase.CazareCabana;
-import Creationale.FactoryMethod.clase.CazareHotel;
-import Creationale.FactoryMethod.clase.PachetTuristic;
+import Creationale.FactoryMethod.curs.clase.CazareCabana;
+import Creationale.FactoryMethod.curs.clase.CazareHotel;
+import Creationale.FactoryMethod.curs.clase.PachetTuristic;
 
 public class CazareFactory implements PachetTuristicFactory{
     @Override
