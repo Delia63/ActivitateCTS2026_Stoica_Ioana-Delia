@@ -1,7 +1,7 @@
-package Creationale.Prototype.main;
+package Creationale.Prototype.curs.main;
 
-import Creationale.Prototype.oferte.IListaOferte;
-import Creationale.Prototype.oferte.ListaOferte;
+import Creationale.Prototype.curs.oferte.IListaOferte;
+import Creationale.Prototype.curs.oferte.ListaOferte;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Creationale.Prototype.oferte;
+package Creationale.Prototype.curs.oferte;
 
 public interface IListaOferte {
     IListaOferte copiaza();
