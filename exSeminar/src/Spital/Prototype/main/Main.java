@@ -1,7 +1,6 @@
 package Spital.Prototype.main;
 
 import Restaurant.Prototype.clase.Rezervare;
-import Spital.Prototype.clase.IReteta;
 import Spital.Prototype.clase.Reteta;
 
 import java.util.HashMap;

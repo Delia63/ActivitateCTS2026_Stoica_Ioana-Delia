@@ -1,0 +1,18 @@
+Cerința 1 (4p)
+Compania aeriană are diferite tipuri de avioane: AvionPasageri, AvionCargo și AvionPrivat. Toate trebuie să aibă o metodă zboara().
+Managerul dorește ca sistemul să fie construit astfel încât, dacă pe viitor compania cumpără un tip nou de avion (ex: AvionMilitar), acesta să poată fi adăugat în aplicație fără a modifica fabricile sau clasele deja existente.
+
+Cerință tehnică: Implementați ierarhia de avioane și ierarhia de fabrici necesară pentru a respecta acest principiu de extensibilitate.
+
+Cerința 2 (3p)
+Personalul de bord este împărțit în categorii fixe: Pilot, Copilot și Stewardesa. Aceste categorii sunt salvate într-un Enum numit TipPersonal.
+Să se realizeze un singur modul (o singură clasă fabrică) care, primind un tip din Enum, să returneze obiectul corespunzător din familia PersonalBord.
+
+Cerință tehnică: Implementați clasa abstractă PersonalBord, clasele concrete și fabrica unică ce conține logica de selecție.
+
+Cerința 3 (1p)
+În clasa Main, simulează:
+
+Crearea unui AvionCargo folosind structura de fabrici de la Cerința 1.
+
+Crearea unei Stewardese folosind fabrica de la Cerința 2.
