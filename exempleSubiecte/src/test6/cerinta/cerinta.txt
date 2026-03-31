@@ -1,0 +1,18 @@
+Cerința 1 (4p) - Factory Method
+Magazinul vinde diferite categorii de dispozitive: Laptop, Smartphone și Tableta. Toate dispozitivele trebuie să aibă o metodă afisareSpecificatii().
+Compania dorește ca arhitectura să fie extensibilă, astfel încât, dacă în viitor se decide vânzarea de Smartwatch-uri, să se poată adăuga această categorie fără a modifica codul existent al fabricilor actuale.
+
+Cerință tehnică: Implementați interfața Produs, clasele concrete și ierarhia de fabrici (interfața Factory și fabricile specifice pentru fiecare produs).
+
+Cerința 2 (3p) - Builder
+La finalizarea unei comenzi, clientul poate personaliza Pachetul de Livrare. Acesta poate opta pentru următoarele facilități extra: ImpachetareCadou (boolean), LivrareUrgenta (boolean), MesajPersonalizat (String) și AsigurareContinut (boolean).
+Dacă aceste opțiuni nu sunt bifate, pachetul se creează cu setările standard (false/null).
+
+Cerință tehnică: Implementați clasa PachetLivrare și clasa PachetBuilder care să permită construcția obiectului folosind method chaining (returnarea this).
+
+Cerința 3 (1p) - Testare
+În clasa Main, simulează:
+
+Crearea unui Smartphone folosind fabrica corespunzătoare.
+
+Crearea unui PachetLivrare care să aibă doar ImpachetareCadou setat pe true și un MesajPersonalizat (ex: "La mulți ani!").

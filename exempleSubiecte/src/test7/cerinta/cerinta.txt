@@ -1,0 +1,17 @@
+Cerința 1 (4p)
+Sistemul trebuie să gestioneze un RegistruCentral al tuturor livrărilor efectuate. Din motive de consistență a datelor și pentru a evita conflictele de scriere în baza de date, aplicația trebuie să garanteze că, indiferent de câte module ale programului încearcă să acceseze registrul, va exista o singură instanță a acestuia în memoria RAM pe tot parcursul execuției.
+
+Specificație tehnică: Implementați clasa care asigură acest comportament, având grijă ca accesul să fie sigur în medii cu mai multe fire de execuție (thread-safe).
+
+Cerința 2 (3p)
+Compania folosește diferite mijloace de transport: Autoutilitara, Camion și Motocicleta. Toate aceste vehicule trebuie să aibă o metodă livreazaPachet().
+Managerul IT dorește ca arhitectura să permită adăugarea de noi tipuri de vehicule (ex: Drona) fără ca programatorii să fie nevoiți să modifice clasele de fabrică deja scrise și testate. Fiecare tip de vehicul va avea propriul său proces de fabricație.
+
+Specificație tehnică: Implementați ierarhia de produse și ierarhia de fabrici care să respecte principiul Open-Closed (deschis pentru extindere, închis pentru modificare).
+
+Cerința 3 (1p)
+În clasa Main, demonstrați:
+
+Accesarea instanței unice a RegistruluiCentral.
+
+Crearea unui Camion folosind structura de fabrici de la Cerința 2 și apelarea metodei de livrare.
