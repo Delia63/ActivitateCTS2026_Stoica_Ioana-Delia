@@ -1,0 +1,29 @@
+Context: O companie de evenimente dorește o aplicație pentru gestionarea echipamentelor dintr-o sală de conferințe. Există mai multe tipuri de echipamente, dar pentru fiecare categorie (Video, Audio, Wi-Fi) trebuie să existe o singură instanță activă înregistrată în sistem, pentru a evita conflictele de semnal.
+
+Cerința 1
+Toate echipamentele trebuie să implementeze interfața IEchipament cu metoda void stareEchipament().
+Implementați clasa RegistryEchipamente care să gestioneze aceste obiecte unice folosind o colecție de tip Map.
+
+Registrul trebuie să aibă o metodă înregistrează(String cheie, IEchipament e) care să arunce o excepție dacă acea cheie este deja ocupată.
+
+Registrul trebuie să aibă o metodă getEchipament(String cheie) pentru a returna resursa dorită.
+
+Cerința 2
+Implementați cel puțin trei clase concrete care implementează IEchipament:
+
+ProiectorVideo
+
+SistemAudio
+
+RouterWifi
+
+Cerința 3
+În clasa Main, demonstrați:
+
+Crearea obiectelor de tip echipament.
+
+Înregistrarea lor în RegistryEchipamente sub chei sugestive (ex: "VideoMain", "AudioHala1").
+
+Încercarea de a înregistra un al doilea proiector sub aceeași cheie "VideoMain" și tratarea excepției (printr-un bloc try-catch).
+
+Accesarea unui echipament din registru și apelarea metodei stareEchipament().
