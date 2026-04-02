@@ -1,6 +1,6 @@
-package Creationale.SingletonRegistry.main;
+package Creationale.SingletonRegistry.ex1.main;
 
-import Creationale.SingletonRegistry.clase.*;
+import Creationale.SingletonRegistry.ex1.clase.*;
 
 public class Main {
     static void main(String[] args) {

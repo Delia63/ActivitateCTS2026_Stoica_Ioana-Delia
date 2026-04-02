@@ -1,0 +1,6 @@
+Subiectul 2: Configurarea unui PC de Gaming (CustomBuild)
+Context: Un magazin online permite clienților să își configureze propriile sisteme desktop.
+
+Cerința A: Un calculator este un obiect extrem de complex. Acesta poate avea: Procesor (obligatoriu), Placă Video (opțional), Memorie RAM (obligatoriu), SSD (opțional), Sistem de răcire lichidă (opțional), Carcasă cu RGB (boolean). Pentru a evita constructorii cu 10-15 parametri, magazinul dorește o modalitate prin care clientul să adauge piesele dorite una câte una, primind la final obiectul Calculator complet configurat.
+
+Cerința B: Magazinul are câteva configurații "Best Buy" deja create (ex: "PC E-Sports Edition", "PC Office Pro"). Pentru a scurta timpul de procesare, când un client alege o astfel de configurație, sistemul nu o va reconstrui de la zero, ci va face o copie rapidă a unui obiect "etalon" deja existent în memorie, pe care o va livra clientului.

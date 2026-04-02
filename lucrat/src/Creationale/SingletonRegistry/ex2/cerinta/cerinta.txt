@@ -1,0 +1,31 @@
+Context: Se dezvoltă o aplicație pentru controlul unei case inteligente. În cadrul sistemului, există diverse dispozitive care trebuie accesate de la distanță. Pentru a evita conflictele (de exemplu, să nu existe două becuri cu aceeași adresă IP sau același nume în baza de date), sistemul folosește un Registry.
+
+Cerința 1 - Registrul de Dispozitive
+Toate dispozitivele inteligente trebuie să implementeze interfața IDispozitiv cu metoda void actioneaza().
+Implementați clasa SmartHomeRegistry care:
+
+Conține un Map<String, IDispozitiv> privat și static.
+
+Are o metodă void adaugaDispozitiv(String nume, IDispozitiv dispozitiv) care aruncă o excepție dacă numele dispozitivului este deja înregistrat.
+
+Are o metodă IDispozitiv getDispozitiv(String nume) care returnează dispozitivul căutat.
+
+Cerința 2 - Tipuri de Dispozitive
+Implementați trei clase concrete:
+
+BecInteligent (metoda actioneaza afișează "Lumina a fost aprinsă/stinsă").
+
+SenzorTemperatura (metoda actioneaza afișează "Se citește temperatura actuală").
+
+CameraSupraveghere (metoda actioneaza afișează "Înregistrarea video a început").
+
+Cerința 3 - Testare în Main
+În clasa Main, simulați următoarele:
+
+Creați un BecInteligent și o CameraSupraveghere.
+
+Înregistrați-le în SmartHomeRegistry cu cheile "LivingLight" și "MainGate".
+
+Încercați să adăugați un alt dispozitiv cu numele "LivingLight" (pentru a declanșa excepția).
+
+Căutați dispozitivul "MainGate" în registru și apelați-i metoda actioneaza().

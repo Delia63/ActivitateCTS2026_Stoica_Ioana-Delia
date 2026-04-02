@@ -1,0 +1,6 @@
+Subiectul 1: Sistem Gestiune Spital (MedCare)
+Context: Se dorește digitalizarea fluxului de pacienți într-un spital privat.
+
+Cerința A: Spitalul are nevoie de un modul care să gestioneze datele generale ale instituției (nume, adresă, manager). Deoarece spitalul este unic, sistemul trebuie să garanteze că există o singură referință către acest obiect în toată aplicația, accesibilă de oriunde, pentru a evita neconcordanțele în rapoarte.
+
+Cerința B: În cadrul spitalului se pot face internări pe diferite secții: Cardiologie, Neurologie și Gastroenterologie. Managerul dorește ca procesul de creare a fișelor de internare să fie centralizat într-o singură entitate (o fabrică). Aceasta va primi ca parametru tipul secției și va returna obiectul corespunzător care implementează interfața IInternare.

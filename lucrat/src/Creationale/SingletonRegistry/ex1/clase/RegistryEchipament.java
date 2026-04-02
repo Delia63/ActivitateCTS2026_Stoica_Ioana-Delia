@@ -1,4 +1,4 @@
-package Creationale.SingletonRegistry.clase;
+package Creationale.SingletonRegistry.ex1.clase;
 
 import java.util.HashMap;
 import java.util.Map;

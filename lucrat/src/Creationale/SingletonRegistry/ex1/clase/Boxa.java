@@ -1,4 +1,4 @@
-package Creationale.SingletonRegistry.clase;
+package Creationale.SingletonRegistry.ex1.clase;
 
 public class Boxa implements IEchipament{
     @Override

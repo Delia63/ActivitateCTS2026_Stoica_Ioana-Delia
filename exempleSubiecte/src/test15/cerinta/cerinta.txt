@@ -1,0 +1,4 @@
+Cerința A: Firma folosește diferite mijloace de transport: Camion, Navă și Avion.
+Directorul tehnic dorește ca logica de creare a acestor mijloace să fie delegată către subclase specifice
+    (ex: o fabrică pentru transport terestru care creează camioane, o fabrică pentru transport maritim care creează nave).
+Astfel, dacă firma decide să introducă transportul cu "Drone", se va crea doar o fabrică nouă de drone, fără a modifica logica celorlalte fabrici existente.
