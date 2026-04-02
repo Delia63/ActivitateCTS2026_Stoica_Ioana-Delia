@@ -1,0 +1,36 @@
+Cerința 1
+Sistemul trebuie să permită crearea unor obiecte de tip MeniuEveniment. Un meniu este un obiect complex care poate avea următoarele elemente (toate opționale, cu excepția numelui):
+
+Nume meniu (obligatoriu)
+
+Fel principal (opțional)
+
+Desert (opțional)
+
+Pachet băuturi (opțional)
+
+Scaun copil inclus (boolean, default false)
+
+Decor masă specific (opțional)
+
+Deoarece clienții își configurează meniul alegând doar ce doresc, constructorul clasei a devenit prea lung și greu de utilizat (anti-pattern-ul Telescoping Constructor). Implementați un modul care să permită construcția pas cu pas a acestui obiect.
+
+Specificație tehnică: 1. Implementați clasa MeniuEveniment și interfața/clasa de tip Builder aferentă.
+2. În Main, creați două meniuri diferite: unul "Full" (cu toate opțiunile) și unul "Minimal" (doar nume și fel principal).
+
+Cerința 2
+Compania oferă trei tipuri de locații: SalaBallroom, TerasaInAerLiber și Crama. Toate aceste locații trebuie să implementeze interfața ILocatie și să aibă o metodă afiseazaDetalii().
+Managerul dorește ca procesul de creare a locațiilor să fie delegat unor clase specializate (fabrici), astfel încât dacă pe viitor se adaugă un nou tip de locație (ex: Rooftop), să nu fie necesară modificarea codului existent în fabricile actuale sau în clasa Main.
+
+Specificație tehnică:
+
+Implementați ierarhia de locații (produse).
+
+Implementați ierarhia de fabrici (un creator abstract și fabrici concrete pentru fiecare tip de locație).
+
+Cerința 3
+În clasa Main, demonstrați:
+
+Utilizarea Builder-ului pentru cele două meniuri.
+
+Utilizarea Factory Method pentru a crea o SalaBallroom și o Crama, apelând metoda de afișare pentru fiecare.
